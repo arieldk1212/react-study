@@ -1,6 +1,6 @@
 // JSX - JS XML (HTML in the end is XML)
-import Expenses from "./components/Expenses";
-
+import Expenses from "./components/Expenses/Expenses";
+import NewExpense from "./components/NewExpense/NewExpense";
 const App = () => {
   const expenses = [
     {
@@ -29,6 +29,7 @@ const App = () => {
       {/* ExpenseItem title={expenses[0].title} amount={expenses[0].amount*/}
       {/* and so on and so on (longer way) */}
       {/* the bottom line is a better wat to treat props  */}
+      <NewExpense />
       <Expenses items={expenses}/>
     </div>
   );
