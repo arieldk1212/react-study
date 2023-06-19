@@ -24,12 +24,16 @@ const App = () => {
     }, 
   ];
 
+ const addExpenseHandler = expense => {
+
+ };
+
   return (
     <div className="App">
       {/* ExpenseItem title={expenses[0].title} amount={expenses[0].amount*/}
       {/* and so on and so on (longer way) */}
       {/* the bottom line is a better wat to treat props  */}
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
